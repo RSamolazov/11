@@ -1,3 +1,29 @@
 body{
-    
+    margin: 50px 0;
+}
+.wrapper{
+    width: 80%;
+    height: 200px;
+    background-color: lightblue;
+    margin: 0 auto;
+    display: flex;
+}
+.wrapper__block{
+height: 100px;
+width: 18%;
+}
+.wrapper__block:nth-child(1){
+    background-color: green;
+}
+.wrapper__block:nth-child(2){
+    background-color: blue;
+}
+.wrapper__block:nth-child(3){
+    background-color: yellow;
+}
+.wrapper__block:nth-child(4){
+    background-color: brown;
+}
+.wrapper__block:nth-child(5){
+    background-color: aqua;
 }

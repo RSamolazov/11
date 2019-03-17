@@ -13,12 +13,30 @@ body{
 .wrapper__block{
     height: 100px;
     /* width: 18%; */
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
     text-align: center;
     font-size:50px;
+    flex-shrink: 1;
 }
-.wrapper__block:nth-child(1){background-color: green; align-self: flex-start; }
-.wrapper__block:nth-child(2){background-color: blue;}
-.wrapper__block:nth-child(3){background-color: yellow;}
-.wrapper__block:nth-child(4){background-color: brown;}
-.wrapper__block:nth-child(5){background-color: aqua;}
+.wrapper__block:nth-child(1){
+    background-color: green;
+    align-self: flex-start; 
+    flex-basis: 200px;
+}
+.wrapper__block:nth-child(2){
+    background-color: blue;
+    flex-basis: 100px;
+}
+.wrapper__block:nth-child(3){
+    background-color: yellow;
+    flex-grow: 1;
+}
+.wrapper__block:nth-child(4){
+    background-color: brown;
+    flex-grow: 2;
+}
+.wrapper__block:nth-child(5){
+    background-color: aqua;
+    flex-grow: 3;
+    align-self: flex-end;
+}
